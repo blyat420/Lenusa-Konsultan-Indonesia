@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenusa’s Article | Lenusa.id</title>
+  <meta name="description" content="Lenusa article list: summaries of published papers and articles on slope monitoring, groundwater and mine dewatering.">
+  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(d){var l;try{l=localStorage.getItem('lenusa-lang')}catch(e){}d.documentElement.lang=l==='en'?'en':'id';d.documentElement.classList.add('i18n-wait');setTimeout(function(){d.documentElement.classList.remove('i18n-wait')},1500)})(document)</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <site-header active="article"></site-header>
+
+  <main>
+    <!-- HERO -->
+    <section class="ar-hero ar-hero--article" aria-labelledby="ar-title">
+      <div class="ar-hero__bg ar-hero__bg--slides" aria-hidden="true">
+        <div class="is-on" style="background-image:url('assets/images/articles/hero/article-hero-01.jpg')"></div>
+        <div style="background-image:url('assets/images/articles/hero/article-hero-02.jpg')"></div>
+        <div style="background-image:url('assets/images/articles/hero/article-hero-03.jpg')"></div>
+        <div style="background-image:url('assets/images/articles/hero/article-hero-04.webp')"></div>
+      </div>
+      <div class="ar-hero__inner" data-fade>
+        <h1 id="ar-title">Lenusa’s Article</h1>
+        <p>Technical insights on geotechnics, groundwater, and mine dewatering. Browse selected articles and studies from across the mining industry, each with a short summary and a link to the original source.</p>
+      </div>
+    </section>
+
+    <!-- LATEST ARTICLE (tabs, rows and pagination are filled by script.js) -->
+    <section id="ar-list" class="ar-list" aria-label="Articles">
+      <div id="ar-filter" class="ar-filter" role="group" aria-label="Article category" data-fade></div>
+      <p id="ar-status" class="ar-sr" role="status"></p>
+      <ul id="ar-rows" class="ar-rows"></ul>
+      <p id="ar-empty" class="ar-empty" hidden>No article found.</p>
+      <nav id="ar-pages" class="tp-pages" aria-label="Pagination" hidden></nav>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <site-actions></site-actions>
+</body>
+</html>

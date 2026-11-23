@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Details | Lenusa.id</title>
+  <meta name="description" content="Training details from Lenusa: description, materials, methods, benefits, prices and registration.">
+  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(d){var l;try{l=localStorage.getItem('lenusa-lang')}catch(e){}d.documentElement.lang=l==='en'?'en':'id';d.documentElement.classList.add('i18n-wait');setTimeout(function(){d.documentElement.classList.remove('i18n-wait')},1500)})(document)</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <site-header active="training"></site-header>
+  <svg class="tp-star-sprite" aria-hidden="true"><symbol id="tp-star" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></symbol></svg>
+
+  <main id="tp-page" class="tp--detail">
+    <!-- Hidden flag to trigger the detail page JS -->
+    <div id="tp-detail" hidden></div>
+
+    <section class="tp-top">
+      <div class="tp-wrap">
+        <nav class="tp-crumb" aria-label="Breadcrumb" data-fade>
+          <a href="training.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg>
+            Training
+          </a>
+          <span aria-hidden="true">•</span>
+          <span id="d-crumb">Training Details</span>
+        </nav>
+
+        <div class="tp-product fade-delay-100" data-fade>
+          <div class="tp-poster">
+            <img id="d-poster" src="" alt="">
+          </div>
+
+          <div class="tp-info">
+            <div class="tp-head">
+              <h1 id="d-title" class="tp-title">Training Title</h1>
+              <p id="d-desc" class="tp-desc"></p>
+            </div>
+
+            <div class="tp-get">
+              <h2 class="tp-get__title">Apa yang didapatkan:</h2>
+              <div class="tp-clip">
+                <ul id="d-get" class="tp-get__list tp-scroll" tabindex="0" aria-label="Apa yang didapatkan"></ul>
+              </div>
+            </div>
+
+            <div class="tp-buy">
+              <div>
+                <div id="d-options" class="tp-options"></div>
+                <div class="tp-pricerow">
+                  <div id="d-prices" class="tp-prices"></div>
+                </div>
+                <div class="tp-actions">
+                  <a id="d-order" class="tp-register" href="#" target="_blank" rel="noopener noreferrer">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav id="tp-dbar" class="tp-dbar" aria-label="Bagian halaman">
+      <div class="tp-wrap tp-dbar__in">
+        <a class="tp-dtab" href="#tp-desc-panel" aria-current="true">Deskripsi Training</a>
+        <a class="tp-dtab" href="#tp-other">Pelatihan Lain</a>
+      </div>
+    </nav>
+
+    <section id="tp-desc-panel" class="tp-dsec" aria-labelledby="d-desc-t" data-fade>
+      <div class="tp-wrap tp-dsec__in">
+        <div>
+          <h2 id="d-desc-t">Deskripsi Training</h2>
+          <div id="d-overview"></div>
+          <h3>Materi Training:</h3>
+          <ul id="d-materials"></ul>
+        </div>
+        <div class="tp-dsec__side">
+          <h2>Metode Training</h2>
+          <ul id="d-methods"></ul>
+          <h3>Siapa Yang Harus Mengikuti Pelatihan Ini?</h3>
+          <p id="d-audience"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tp-other" class="tp-other" aria-labelledby="d-other-t" data-fade>
+      <div class="tp-wrap">
+        <h2 id="d-other-t">Pelatihan Lain</h2>
+        <ul id="d-other" class="tp-grid"></ul>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <site-actions></site-actions>
+  <script src="script.js"></script>
+</body>
+</html>

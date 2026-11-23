@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Article | Lenusa.id</title>
+  <meta name="description" content="Article summary from Lenusa with a link to the original publication.">
+  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(d){var l;try{l=localStorage.getItem('lenusa-lang')}catch(e){}d.documentElement.lang=l==='en'?'en':'id';d.documentElement.classList.add('i18n-wait');setTimeout(function(){d.documentElement.classList.remove('i18n-wait')},1500)})(document)</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <site-header active="article"></site-header>
+
+  <main id="ar-page" class="ar--detail">
+    <div id="ar-detail" class="ar-wrap">
+      <!-- the article is chosen with ?id= in the address, e.g. article-details.html?id=1 -->
+      <nav class="ar-crumb" aria-label="Breadcrumb" data-fade>
+        <a href="article.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12H3M9 6l-6 6 6 6"/></svg>
+          Article
+        </a>
+        <span aria-hidden="true">•</span>
+        <strong id="a-crumb" aria-current="page"></strong>
+      </nav>
+
+      <article>
+        <header data-fade>
+          <h1 id="a-title" class="ar-title"></h1>
+          <p id="a-meta" class="ar-meta-line"></p>
+          <p id="a-author" class="ar-author"></p>
+        </header>
+
+        <figure class="ar-cover fade-delay-100" data-fade>
+          <img id="a-cover" alt="">
+          <figcaption id="a-caption"></figcaption>
+        </figure>
+
+        <div id="a-body" class="ar-prose"></div>
+      </article>
+
+      <section id="ar-rel" class="ar-rel" aria-labelledby="ar-rel-title" data-fade>
+        <h2 id="ar-rel-title">Relevant Article</h2>
+        <ul id="a-rel" class="ar-rel__grid"></ul>
+      </section>
+    </div>
+  </main>
+
+  <site-footer></site-footer>
+  <site-actions></site-actions>
+</body>
+</html>

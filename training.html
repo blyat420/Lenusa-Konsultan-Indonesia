@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training | Lenusa.id</title>
+  <meta name="description" content="Lenusa training list: Diklat and BNSP certification, public training programmes for the mining industry.">
+  <script>document.documentElement.classList.add('js')</script>
+  <script>(function(d){var l;try{l=localStorage.getItem('lenusa-lang')}catch(e){}d.documentElement.lang=l==='en'?'en':'id';d.documentElement.classList.add('i18n-wait');setTimeout(function(){d.documentElement.classList.remove('i18n-wait')},1500)})(document)</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <site-header active="training"></site-header>
+  <svg class="tp-star-sprite" aria-hidden="true"><symbol id="tp-star" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></symbol></svg>
+
+  <main class="tp-page">
+    <section class="ar-hero" aria-labelledby="tp-title">
+      <img class="ar-hero__bg" src="assets/images/home/pillars/pillar-training.webp" alt="">
+      <div class="ar-hero__inner" data-fade>
+        <h1 id="tp-title"><strong>Mining Training &amp; <br>Professional Certification</strong></h1>
+        <p>Litologi by Lenusa delivers practical training for geotechnical, hydrogeological, and mining professionals. <br>From BNSP-certified Diklat to public training programmes, each course is taught by industry practitioners <br>and built around real project needs, so your team gains skills it can apply on site from day one.</p>
+        <a class="wipe-button tp-hero__button" href="#tp-list">See Our Training</a>
+      </div>
+    </section>
+
+    <section id="tp-list" class="tp-list">
+      <div class="tp-wrap">
+        <div class="tp-list__head" data-fade>
+          <h2 class="tp-list__title">All Training List</h2>
+        </div>
+
+        <div class="tp-bar fade-delay-100" data-fade>
+          <div id="tp-tabs" class="ar-filter" role="group" aria-label="Training categories"></div>
+          <label class="tp-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <input id="tp-search" type="search" placeholder="Search Training" aria-label="Search Training">
+          </label>
+        </div>
+
+        <p id="tp-status" class="tp-sr" aria-live="polite"></p>
+
+        <ul id="tp-grid" class="tp-grid"></ul>
+
+        <div id="tp-empty" class="tp-empty" hidden>No training found.</div>
+
+        <div id="tp-pages" class="tp-pages" hidden></div>
+      </div>
+    </section>
+
+    <section id="training-calendar" class="cal" aria-labelledby="training-cal-title">
+      <header class="cal-hero">
+        <div class="cal-hero__in">
+          <h2 id="training-cal-title">Lenusa’s Event Calendar</h2>
+          <p>Stay informed about upcoming events, professional training sessions, industry activities, and other important events hosted or attended by Lenusa. Discover opportunities to expand your knowledge, connect with industry professionals, and stay updated on the latest developments in mining.</p>
+        </div>
+      </header>
+      <div class="cal__in">
+        <div class="cal__top">
+          <div class="cal__tools">
+            <nav id="training-cal-cats" class="cal__menu" data-cal="cats" aria-label="Training categories">
+              <button type="button" class="cal-cat" data-cat="diklat" aria-pressed="true">Diklat Sertifikasi</button>
+              <button type="button" class="cal-cat" data-cat="public" aria-pressed="false">Public Training</button>
+            </nav>
+            <div class="cal__bar">
+              <label class="ar-sr" for="training-cal-q">Quarter</label>
+              <select id="training-cal-q" data-cal="quarter">
+                <option value="1">Quarter 1</option>
+                <option value="2">Quarter 2</option>
+                <option value="3">Quarter 3</option>
+                <option value="4">Quarter 4</option>
+              </select>
+              <button id="training-cal-clear" data-cal="clear" type="button" hidden>Reset</button>
+            </div>
+          </div>
+          <p class="cal__legend"><span aria-hidden="true"></span>Training days</p>
+        </div>
+        <div class="cal__layout">
+          <div class="cal__main">
+            <p id="training-cal-sub" class="ar-sr" data-cal="sub">Diklat Sertifikasi</p>
+            <div class="cal__body">
+              <p id="training-cal-status" class="ar-sr" data-cal="status" role="status"></p>
+              <ul id="training-cal-list" class="cal__cards" data-cal="list"></ul>
+              <div class="cal__bottom">
+                <a class="cal-download wipe-button" href="https://drive.google.com/drive/folders/1pNjEOQM4Ht0dszrIbfwWwZ30cy90eBDv?usp=sharing" target="_blank" rel="noopener noreferrer">Download Event Calendar</a>
+                <div id="training-cal-pager" class="cal__pager" data-cal="pager" hidden>
+                  <button id="training-cal-prev" type="button" aria-label="Previous trainings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  <button id="training-cal-next" type="button" aria-label="Next trainings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="cal__side" aria-label="Training days calendar">
+            <div id="training-cal-months" class="cal-months" data-cal="months"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <site-actions></site-actions>
+  <script src="script.js"></script>
+</body>
+</html>
